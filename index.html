@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>UI Engineer</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="output.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/devicon@2.17.0/devicon.min.css">
+</head>
+
+<body>
+
+     <nav>
+       <div class="logo">Aradhya.</div>
+
+    <div class="nav-links">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </div>
+    </nav>
+
+   <img src="./profile.jpg3.png" alt="Aradhya" class="hero-photo">
+ 
+
+<div class="hero">
+
+    <h1>Hi I'm Aradhya</h1>
+
+    <p>UI Engineer • Frontend Developer • Creative Designer</p>
+
+    <h2>Design. Code. Create.</h2>
+
+    <p>
+        I love turning ideas into clean and beautiful web interfaces.
+    </p>
+
+    <a href="#projects" class="work-button">View My Work</a>
+</div>
+
+<section id="skills" class="skills reveal">
+    <h2>My Skills</h2>
+<div class="skill-list">
+    <span><i class="devicon-html5-plain colored"></i> HTML</span>
+    <span><i class="devicon-css3-plain colored"></i> CSS</span>
+    <span><i class="devicon-javascript-plain colored"></i> JavaScript</span>
+    <span><i class="devicon-figma-plain colored"></i> Figma</span>
+</div>
+</section>
+
+<section id="about" class="about reveal">
+    <h2>About Me</h2> 
+        <p>I am an aspiring UI Engineer who enjoys turning ideas into clean, responsive, and user-friendly
+           web interfaces. I am currently building my skills in HTML, CSS, JavaScript, and Figma.
+        </p>
+
+        <p> My goal is to grow as a UI Engineer and create meaningful digital experiences through design and code.</p>
+</section>
+
+<section id="projects" class="projects reveal">
+    <h2>My Projects</h2>
+
+    <div class="project-list">
+        <div class="project-card">
+            <h3> Personal Portfolio Website</h3>
+            <p>A responsive personal portfolio website showcasing my skills, projects, and UI Engineer HTML CSS.</p>
+            <div class="project-tags">
+                <span>HTML</span>
+                <span>CSS</span>
+            </div>
+
+        </div>
+
+    <div class="project-card">
+            <h3>Modern Landing Page</h3>
+            <p>A clean and responsive landing page designed with a modern layout using HTML and CSS.</p>
+            <div class="project-tags">
+                <span>HTML</span>
+                <span>CSS</span>
+            </div>
+            <a href="landing-page.html">View Project</a>
+        </div>
+    </div>
+
+</section>
+
+<section id="achievements" class="achievements reveal">
+    <h2>My Achievements</h2>
+
+    <div class="achievements-card">
+        <h3>UI/UX Design Intern</h3>
+
+        <p class="company">Cognifyz Technologies</p>
+
+        <p>I Completed a UI/UX DEsign Internship With Cognifyz Technologies
+            From July 2025 to August 2025.
+        </p>
+        <a href="cognifyz-certificate.pdf1.png" target="_blank" class="certificate-button">View Certificate</a>
+    </div>
+</section>
+
+
+<section id="contact" class="contact reveal">
+    <h2>Contact Me</h2>
+    <p>Have a project idea or want to connect? Feel free to send me a message.</p>
+ <div class="social-links">
+
+    <a href="https://github.com/Aradhya-UI88" target="_blank">
+        <i class="devicon-github-original"></i>
+    </a>
+
+    <a href="https://www.linkedin.com/in/aradhya-singh-847485331/" target="_blank">
+        <i class="devicon-linkedin-plain"></i>
+    </a>
+
+    <a href="https://mail.google.com/mail/?view=cm&fs=1&to=aradhyasingh10988@gmail.com" target="_blank">
+        ✉
+    </a>
+
+</div>
+   
+    
+</div>
+<form>
+    <input type="text" name="name" placeholder="Enter your name" required>
+
+    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+    <label for="message">Message</label>
+
+    <textarea id="message" name="message" placeholder="Write your message" required></textarea>
+
+    <button type="submit">Send Message</button>
+</form>    
+
+</section>
+
+<footer>
+    <p>© 2026 Aradhya Singh | UI Engineer portfolio</p>
+</footer>
+
+<script>
+    const revealElements = document.querySelectorAll(".reveal");
+
+    function revealOnScroll() {
+        revealElements.forEach((element) => {
+            const windowHeight = window.innerHeight;
+            const elementTop = element.getBoundingClientRect().top;
+
+           if (elementTop < windowHeight - 100) {
+           element.classList.add("active");
+           } else {
+           element.classList.remove("active");
+}
+        });
+    }
+
+    window.addEventListener("scroll", revealOnScroll);
+
+    revealOnScroll();
+</script>
+
+</body>
+</html>
